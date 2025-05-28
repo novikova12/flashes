@@ -1,0 +1,339 @@
+/*book */
+body {
+    margin: 0;
+    background-image: url('../assets/images/dark.jpg');
+    background-size: cover;
+    background-position: center;      
+    color: white;
+}
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    color: black; 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.btn-primary, .btn-danger {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    transition: background-color 0.3s; 
+    border-radius: 10px;
+    height: 45px; 
+    width: 110px; 
+    font-size: 16px; 
+    cursor: pointer;
+}
+
+.btn-danger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(160, 114, 125);
+    color: white; 
+    transition: background-color 0.3s; 
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-danger:hover {
+    background-color: rgb(134, 95, 105);
+    color: white; 
+}
+
+.btn-secondary {
+    background-color: #ccc; 
+    color: black; 
+    border-radius: 5px; 
+}
+
+
+
+/* index */
+
+
+.ordder-index {
+    padding: 40px;
+    text-align: center;
+}
+
+.ordder-index h1 {
+    font-size: 3em;
+    color: white;
+    margin: 60px 0;
+    margin-top: 0;
+}
+
+.ordder-index .order-table {
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 1450px;
+    max-width: 1400px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-left: -120px;
+}
+
+.ordder-index .order-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s;
+}
+
+.ordder-index .order-row:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.ordder-index .order-row:last-child {
+    border-bottom: none;
+}
+
+.ordder-index .order-header {
+    font-weight: bold;
+    color: rgb(160, 214, 228);
+}
+
+.ordder-index .order-item {
+    color: white;
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+    padding: 10px;
+}
+
+.ordder-index .button-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.btn-danger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(160, 114, 125);
+    color: white; 
+    transition: background-color 0.3s; 
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.btn-danger:hover {
+    background-color: rgb(134, 95, 105);
+    color: white; 
+}
+
+.ordder-index .btn-danger {
+    margin: 0 2px;
+    padding: 10px 10px;
+    flex: 0 0 auto;
+    font-size: 14px;
+    min-width: 100px;
+}
+
+.ordder-index .no-orders-message {
+    text-align: center; 
+    font-size: 1.5em; 
+    color: white; 
+    margin-top: 20px;
+    flex: 1;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.pagination {
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.page-item {
+    margin: 0 5px;
+}
+
+.page-link {
+    display: inline-block;
+    padding: 10px 15px;
+    color: white;
+    background-color: rgb(76, 175, 80);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.page-link:hover {
+    background-color: rgb(56, 142, 60);
+}
+
+.page-item.active .page-link {
+    background-color: rgb(160, 114, 125);
+    color: white;
+}
+
+.page-link.disabled {
+    background-color: rgba(160, 114, 125, 0.5);
+    color: white;
+    pointer-events: none;
+}
+
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    color: black;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.btn-primary, .btn-danger {
+    height: 45px;
+    width: 110px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-danger {
+    background-color: rgb(160, 114, 125); 
+    color: white; 
+}
+
+.btn-danger:hover {
+    background-color: rgb(134, 95, 105);
+    color: white; 
+}
+
+.btn-secondary {
+    background-color: #ccc; 
+    color: black; 
+    border-radius: 5px; 
+}
+
+
+
+@media (max-width: 768px) {
+
+    .ordder-index {
+        padding: 10px; 
+    }
+
+    .ordder-index h1 {
+        font-size: 2em; 
+        margin: 20px 0; 
+    }
+
+    .ordder-index .order-table {
+        width: 100%; 
+        max-width: none; 
+        margin-left: 0; 
+        padding: 10px; 
+    }
+
+    .ordder-index .order-row {
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 10px; 
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+    }
+
+    .ordder-index .order-header {
+        display: none; 
+    }
+
+    .ordder-index .order-item {
+        width: 100%; 
+        text-align: left; 
+        padding: 5px 0; 
+        border-bottom: none; 
+    }
+
+    .ordder-index .order-row:not(.order-header) .order-item::before {
+        content: attr(data-label) ": "; 
+        font-weight: bold; 
+        margin-right: 5px; 
+        color: white; 
+    }
+
+
+    .ordder-index .action-column {
+        width: 100%; 
+        text-align: left; 
+        padding-top: 10px; 
+    }
+
+    .ordder-index .button-container {
+        flex-direction: column; 
+        align-items: flex-start; 
+        gap: 5px; 
+    }
+
+    .ordder-index .button-container .btn {
+        width: auto; 
+        min-width: 120px; 
+        padding: 8px 12px; 
+        text-align: center; 
+    }
+
+    .ordder-index .no-orders-message {
+        text-align: center; 
+        padding: 20px; 
+        width: 100%; 
+    }
+
+
+    .pagination-container {
+        margin: 10px 0;
+    }
+
+    .pagination {
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+
+    .page-item {
+        margin: 2px; 
+    }
+
+    .page-link {
+        padding: 8px 12px; 
+    }
+}

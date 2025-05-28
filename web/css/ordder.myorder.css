@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    background-image: url('../assets/images/dark.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    color: white;
+    margin-top: -20px;
+}
+
+.order-table {
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 30px auto;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+}
+
+.order-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s;
+}
+
+.order-row:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.order-row:last-child {
+    border-bottom: none;
+}
+
+.order-header {
+    font-weight: bold;
+    color: rgb(160, 214, 228);
+}
+
+.order-item {
+    color: white;
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    word-break: break-word; 
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    width: 100%;
+}
+
+.btn-danger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(160, 114, 125);
+    color: white;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+    width: 110px; 
+    height: 45px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none; 
+    padding: 0 10px; 
+    box-sizing: border-box; 
+}
+
+.btn-danger:hover {
+    background-color: rgb(134, 95, 105);
+    color: white;
+}
+
+.no-orders-message {
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    margin-top: 20px;
+    flex: 1;
+}
+
+
+@media (max-width: 767px) {
+
+
+    .button-container {
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        width: auto; 
+    }
+
+    
+    .btn-danger {
+        width: 100%; 
+        max-width: 150px; 
+        margin-right: 0; 
+        margin-bottom: 10px; 
+        height: auto; 
+        padding: 10px; 
+        font-size: 1em; 
+    }
+
+
+    .button-container .btn-danger:last-child {
+        margin-bottom: 0;
+    }
+
+    
+    .order-item {
+        padding: 5px; 
+        font-size: 0.9em;   
+        flex-basis: 0; 
+        flex-shrink: 1; 
+    }
+
+    
+    h1 {
+        font-size: 2em;
+    }
+
+   
+    .order-table {
+        padding: 10px;
+    }
+
+  
+    .no-orders-message {
+        font-size: 1.2em;
+    }
+}

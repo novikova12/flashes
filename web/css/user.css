@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: url('../assets/images/dark.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff; 
+}
+
+#banner {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+}
+
+.banner-image {
+  background-image: url('../assets/images/dark.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  width: 100%;
+}
+
+.banner-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.user-form,
+.user-form h2,
+.user-form .mb-3,
+.user-form .reg-button,
+
+.form-check-label 
+{
+    opacity: 0;
+    transform: translateX(-50px); 
+}
+
+
+.user-form,
+.user-form h2,
+.user-form .mb-3,
+.user-form .reg-button,
+
+.form-check-label
+{
+
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
+
+@keyframes slideInLeft {
+  0% {
+      opacity: 0;
+      transform: translateX(-50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+
+.user-form {
+  max-width: 800px; 
+  width: 100%; 
+  margin: auto;
+  padding: 30px;
+  border-radius: 8px; 
+  animation: slideInLeft 1.5s ease-out forwards; 
+}
+
+.user-form h2 {
+  color: rgb(255, 255, 255); 
+  text-align: left; 
+  margin-left: 0px; 
+
+  animation: slideInLeft 1.7s ease-out forwards; 
+}
+
+
+
+
+.user-form .form-label {
+  color: rgb(255, 255, 255); 
+  margin-bottom: 5px;
+ 
+}
+
+
+.user-form .form-control {
+  color: rgb(104, 104, 104); 
+  background-color: rgba(255, 255, 255, 0.3); 
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.user-form .form-control:focus {
+  background-color: rgba(255, 255, 255, 0.4);
+  outline: none;
+}
+
+
+.user-form .form-check-label {
+  color: rgb(255, 255, 255); 
+}
+
+.user-form .form-check-input {
+   margin-top: 0.3rem;
+}
+
+
+
+.user-form .reg-button {
+  margin-top: 30px;
+  padding: 10px 30px;
+  font-size: 1.2em;
+  color: white;
+  background-color: rgb(160, 114, 125);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+
+}
+
+.reg-button:hover {
+  background-color: rgb(134, 95, 105);
+  color: white;
+  transform: scale(1.05); 
+}
+

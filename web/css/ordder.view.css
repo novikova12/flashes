@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    background-image: url('../assets/images/dark.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white; 
+}
+
+.ordder-view {
+    max-width: 600px;
+    margin: 30px auto; 
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 10px; 
+
+}
+
+h1 {
+    text-align: center; 
+    font-size: 2.5em; 
+    margin-bottom: 20px; 
+}
+
+.detail-view {
+    color: white; 
+    font-size: 1.2em; 
+}
+
+.btn {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: rgb(160, 114, 125); 
+    color: white; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    text-decoration: none;
+    transition: background-color 0.3s; 
+    margin: 20px 0; 
+    width: 140px; 
+    font-size: 16px; 
+    text-align: left; 
+}
+
+.btn:hover {
+    background-color: rgb(134, 95, 105); 
+    color:white;
+    transform: scale(1.05);
+}
